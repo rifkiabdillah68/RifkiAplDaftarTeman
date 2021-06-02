@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606227684291",
+    "project_id": "aplikasi-daftar-teman",
+    "storage_bucket": "aplikasi-daftar-teman.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606227684291:android:6ec53eaf678bb38db13b76",
+        "android_client_info": {
+          "package_name": "com.example.aplikasidaftarteman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606227684291-icml0msgud0ro9rh8mhce06t202qdilg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhG1hBgMJti23VpyKbgU3dt8vOBs9EnIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606227684291-icml0msgud0ro9rh8mhce06t202qdilg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
