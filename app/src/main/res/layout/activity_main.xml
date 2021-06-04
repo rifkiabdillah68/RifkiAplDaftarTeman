@@ -15,21 +15,21 @@
             android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nama"
+            android:hint="Nama"
             android:ems="10"
             android:inputType="textPersonName" />
         <EditText
             android:id="@+id/alamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alamat"
+            android:hint="Alamat"
             android:ems="10"
             android:inputType="textPersonName" />
         <EditText
             android:id="@+id/no_hp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nomor HP"
+            android:hint="Nomor HP"
             android:ems="10"
             android:inputType="number" />
         <LinearLayout
