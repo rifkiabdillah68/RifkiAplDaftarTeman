@@ -1,6 +1,10 @@
 package com.example.aplikasidaftarteman
 
+import android.app.AlertDialog
 import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,6 +45,26 @@ class RecyclerViewAdapter (private val listdata_teman: ArrayList<data_teman>, co
         holder.NoHP.text = "NoHP: $NoHP"
         holder.ListItem.setOnLongClickListener(object : View.OnLongClickListener {
             override fun onLongClick(p0: View?): Boolean {
+                holder.ListItem.setOnLongClickListener { view ->
+                    val action = arrayOf("Update", "Delete")
+                    val alert: AlertDialog.Builder = AlertDialog.Builder(view.context)
+                    alert.setItems(action, DialogInterface.OnClickListener { dialog, i ->
+                        when (i){ 0 -> {
+                            val bundle = Bundle()
+                            bundle.putString("dataNama", listdata_teman[position].nama)
+                            bundle.putString("dataAlamat", listdata_teman[position].alamat)
+                            bundle.putString("dataNoHP", listdata_teman[position].noHp)
+                            bundle.putString("getPrimaryKey", listdata_teman[position].key)
+                            val intent = Intent(view.context, UpdateData::class.java)
+                            intent.putExtras(bundle)
+                            context.startActivity(intent)
+                        } 1 -> {}
+                        }
+                    })
+                    alert.create()
+                    alert.show()
+                    true
+                }
                 return true
             }
         })
